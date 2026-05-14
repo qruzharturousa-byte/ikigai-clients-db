@@ -16,10 +16,20 @@ access:
   roles:
     - admin
     - vendedor
-version: "2026-05-04"
-last_updated: "2026-05-04"
+version: "v1.0.0"
+last_updated: "2026-05-14"
+
+advertencias:
+  - "⚠️ Tailscale bloquea DNS local — pausar o usar 1.1.1.1 si no carga admin"
+  - "⚠️ SSL wildcard vence 2026-08-01 — renovar antes"
+
+pendientes:
+  - Alta de 4 usuarios vendedores
+  - Sesiones Drive conectadas
+  - Dashboard de reportes de ventas
+
 notes: |
   LIVE desde 2026-05-04. Docker container: admin-qruzh. VIP: 10.11.0.44.
   SSL wildcard válido hasta 2026-08-01.
-  Backend: qruzh-api.service.
-  Pendiente: alta de 4 usuarios + integración sesiones Drive.
+  Backend: qruzh-api.service (JWT/bcrypt).
+  Usuarios activos: 1 (Arturo). Pendiente: 4 vendedores.

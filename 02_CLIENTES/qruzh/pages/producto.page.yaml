@@ -4,8 +4,8 @@ name: "Página de Producto"
 path: "/products/{handle}"
 status: activo
 type: detalle
-version: "2026-05-01"
-last_updated: "2026-05-01"
+version_actual: "v1.0.0"
+last_updated: "2026-05-14"
 
 features:
   - galeria_imagenes

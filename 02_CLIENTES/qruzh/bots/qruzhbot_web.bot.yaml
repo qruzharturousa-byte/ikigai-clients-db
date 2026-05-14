@@ -14,11 +14,28 @@ tech:
 access:
   auth: "API token interno"
   roles: []
-version: "2.1"
-last_updated: "2026-05-11"
+version: "v2.1.0"
+last_updated: "2026-05-14"
+
+capacidades:
+  - RAG Vectorize (catálogo en tiempo real)
+  - Memoria de sesiones
+  - Purchase intent detection (20 intents)
+  - Escalada automática a WhatsApp
+  - Transcripción voz (Whisper)
+
+modelo: "claude-sonnet-4-6"
+
+pendientes:
+  - Auto-mejora brain (context/qruzhbot_web_auto_mejora_brain.md)
+  - v2.2.0: respuestas por categoría mejoradas
+
+notas_operativas:
+  - "No inventa información — solo usa catálogo conectado"
+  - "Cierre de venta siempre vía WhatsApp"
+  - "Handoff completo: ARCH_IKIGAI/08_INBOX/00_POR_CLASIFICAR/QRUZHBOT_WEB_HANDOFF_2026-05-11.md"
+
 notes: |
   LIVE en qruzh.com.mx desde 2026-05-11. Versión 2.1.
   RAG con Vectorize, memoria de sesiones, purchase_intent, 20 intents.
-  No inventa información — usa catálogo conectado.
-  Cierre de venta vía WhatsApp.
-  Próxima tarea: Auto-mejora brain (ver context/qruzhbot_web_auto_mejora_brain.md).
+  Próxima tarea: Auto-mejora brain.
