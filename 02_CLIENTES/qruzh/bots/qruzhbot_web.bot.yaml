@@ -1,0 +1,24 @@
+id: qruzhbot_web
+client_id: qruzh
+name: "QruzhBot Web"
+type: api
+status: activo
+url: "https://qruzh.com.mx"
+repo: "qruzhbot-web"
+tech:
+  - Cloudflare Workers
+  - Cloudflare Vectorize
+  - Claude AI
+  - Supabase
+  - Cloudflare D1
+access:
+  auth: "API token interno"
+  roles: []
+version: "2.1"
+last_updated: "2026-05-11"
+notes: |
+  LIVE en qruzh.com.mx desde 2026-05-11. Versión 2.1.
+  RAG con Vectorize, memoria de sesiones, purchase_intent, 20 intents.
+  No inventa información — usa catálogo conectado.
+  Cierre de venta vía WhatsApp.
+  Próxima tarea: Auto-mejora brain (ver context/qruzhbot_web_auto_mejora_brain.md).

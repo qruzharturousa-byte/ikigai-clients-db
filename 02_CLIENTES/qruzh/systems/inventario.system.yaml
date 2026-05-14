@@ -1,0 +1,22 @@
+id: inventario
+client_id: qruzh
+name: "Gestión de Inventario"
+type: inventario
+status: activo
+url: "https://admin.qruzh.com.mx/inventario"
+repo: "qruzh-admin"
+tech:
+  - Shopify Admin API
+  - Supabase
+  - Google Sheets
+access:
+  auth: "JWT (admin panel)"
+  roles:
+    - admin
+version: "2026-05-01"
+last_updated: "2026-05-01"
+notes: |
+  Gestión de productos y variantes vía Shopify Admin API.
+  Catálogo conectado a QruzhBot para respuestas sobre disponibilidad.
+  Token SA en VPS: /home/arturo/.secrets/shopify_admin_ikigai_sheets.env
+  Theme ID Shopify: 184131191080

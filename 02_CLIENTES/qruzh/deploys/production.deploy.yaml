@@ -1,0 +1,22 @@
+client_id: qruzh
+env: production
+status: live
+version: "2026-05-11"
+deployed_at: "2026-05-11"
+
+infra:
+  host: "31.97.157.119"
+  provider: "VPS + Cloudflare"
+  container: "Docker (admin-qruzh, qruzh-pago)"
+  ssl_expiry: "2026-08-01"
+  cdn: "Cloudflare"
+
+healthcheck:
+  url: "https://qruzh.com.mx"
+  ok: true
+
+notes: |
+  Shopify (qruzh.com.mx) — gestionado desde Shopify admin.
+  Admin (admin.qruzh.com.mx) — VPS Docker, VIP 10.11.0.44.
+  Pago (pago.qruzh.com.mx) — Docker qruzh-pago, nginx:alpine.
+  DNS Cloudflare: NS olof+vivienne; admin A→31.97.157.119; pago A→31.97.157.119.

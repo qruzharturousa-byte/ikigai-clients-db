@@ -1,0 +1,17 @@
+id: voice_agent
+client_id: qruzh
+name: "Voice Agent"
+type: bot
+status: en_desarrollo
+url: ""
+repo: ""
+tech:
+  - Whisper
+  - Claude AI
+  - Cloudflare Workers
+access:
+  auth: ""
+  roles: []
+version: "0.1"
+last_updated: "2026-05-01"
+notes: "Agente de voz con transcripción Whisper + respuesta Claude. En planificación."

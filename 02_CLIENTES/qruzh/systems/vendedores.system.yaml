@@ -1,0 +1,18 @@
+id: vendedores
+client_id: qruzh
+name: "Módulo de Vendedores"
+type: crm
+status: en_desarrollo
+url: "https://admin.qruzh.com.mx/vendedores"
+repo: "qruzh-admin"
+tech:
+  - Node.js
+  - Supabase
+access:
+  auth: "JWT (admin panel)"
+  roles:
+    - admin
+    - vendedor
+version: "2026-05-01"
+last_updated: "2026-05-01"
+notes: "Pendiente: alta de 4 usuarios vendedores en el panel."

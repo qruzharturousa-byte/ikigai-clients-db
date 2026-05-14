@@ -1,0 +1,27 @@
+id: servicios
+client_id: torreland
+name: "Servicios"
+path: "/servicios"
+status: activo
+type: listado
+version: "2026-05-01"
+last_updated: "2026-05-01"
+
+features:
+  - listado_servicios
+  - precios_referencia
+  - cta_cotizacion
+
+seo:
+  title: "Servicios — Torre Land SA de CV"
+  description: "Catálogo completo de servicios de mantenimiento y administración."
+  keywords:
+    - servicios torre land
+    - mantenimiento cancun
+
+analytics:
+  ga4: false
+  pixel_meta: false
+  hotjar: false
+
+notes: ""

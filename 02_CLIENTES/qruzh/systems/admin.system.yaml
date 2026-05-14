@@ -1,0 +1,25 @@
+id: admin
+client_id: qruzh
+name: "Panel Administrativo"
+type: admin_panel
+status: activo
+url: "https://admin.qruzh.com.mx"
+repo: "qruzh-admin"
+tech:
+  - Docker
+  - Nginx
+  - JWT
+  - bcrypt
+  - Node.js
+access:
+  auth: "JWT + bcrypt"
+  roles:
+    - admin
+    - vendedor
+version: "2026-05-04"
+last_updated: "2026-05-04"
+notes: |
+  LIVE desde 2026-05-04. Docker container: admin-qruzh. VIP: 10.11.0.44.
+  SSL wildcard válido hasta 2026-08-01.
+  Backend: qruzh-api.service.
+  Pendiente: alta de 4 usuarios + integración sesiones Drive.

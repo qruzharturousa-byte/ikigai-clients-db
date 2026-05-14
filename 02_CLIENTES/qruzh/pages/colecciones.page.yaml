@@ -1,0 +1,28 @@
+id: colecciones
+client_id: qruzh
+name: "Colecciones"
+path: "/collections"
+status: activo
+type: listado
+version: "2026-05-01"
+last_updated: "2026-05-01"
+
+features:
+  - filtro_por_modelo_celular
+  - filtro_por_tipo_accesorio
+  - paginacion
+  - quick_add_carrito
+
+seo:
+  title: "Colecciones — QRUZH Accesorios"
+  description: "Explora todas las colecciones de accesorios para celular."
+  keywords:
+    - colecciones fundas
+    - accesorios celular
+
+analytics:
+  ga4: false
+  pixel_meta: false
+  hotjar: false
+
+notes: "Listado de colecciones Shopify estándar."

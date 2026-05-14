@@ -1,0 +1,17 @@
+id: crm_clientes
+client_id: torreland
+name: "CRM de Clientes"
+type: crm
+status: en_desarrollo
+url: ""
+repo: ""
+tech:
+  - Google Sheets
+  - Supabase
+access:
+  auth: "Google OAuth"
+  roles:
+    - admin
+version: "0.1"
+last_updated: "2026-05-01"
+notes: "CRM básico en Sheets. Migración a Supabase pendiente."

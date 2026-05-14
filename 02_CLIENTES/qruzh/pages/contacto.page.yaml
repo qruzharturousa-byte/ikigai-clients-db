@@ -1,0 +1,27 @@
+id: contacto
+client_id: qruzh
+name: "Contacto"
+path: "/pages/contacto"
+status: activo
+type: formulario
+version: "2026-04-01"
+last_updated: "2026-04-01"
+
+features:
+  - formulario_contacto
+  - mapa_ubicacion
+  - whatsapp_link
+
+seo:
+  title: "Contacto — QRUZH"
+  description: "Contáctanos por WhatsApp o llena el formulario."
+  keywords:
+    - contacto qruzh
+    - whatsapp qruzh
+
+analytics:
+  ga4: false
+  pixel_meta: false
+  hotjar: false
+
+notes: ""

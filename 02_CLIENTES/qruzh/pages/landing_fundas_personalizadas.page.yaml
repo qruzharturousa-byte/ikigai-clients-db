@@ -1,0 +1,30 @@
+id: landing_fundas_personalizadas
+client_id: qruzh
+name: "Landing — Fundas Personalizadas"
+path: "/pages/fundas-personalizadas"
+status: activo
+type: landing
+version: "2026-04-01"
+last_updated: "2026-04-01"
+
+features:
+  - hero_fundas_personalizadas
+  - proceso_personalizacion
+  - galeria_ejemplos
+  - cta_whatsapp
+  - formulario_solicitud
+
+seo:
+  title: "Fundas Personalizadas — QRUZH"
+  description: "Diseña tu funda personalizada con foto, nombre o diseño. Envíos a todo México."
+  keywords:
+    - fundas personalizadas cancun
+    - fundas con foto
+    - fundas personalizadas mexico
+
+analytics:
+  ga4: false
+  pixel_meta: false
+  hotjar: false
+
+notes: "Landing de captación para el servicio de personalización. Alta conversión esperada."

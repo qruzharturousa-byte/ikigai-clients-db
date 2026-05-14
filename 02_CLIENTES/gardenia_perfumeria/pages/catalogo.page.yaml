@@ -1,0 +1,27 @@
+id: catalogo
+client_id: gardenia_perfumeria
+name: "Catálogo de Productos"
+path: "/catalogo"
+status: en_desarrollo
+type: listado
+version: "2025-01-01"
+last_updated: "2025-01-01"
+
+features:
+  - listado_perfumes
+  - filtros
+  - detalle_notas_olfativas
+
+seo:
+  title: "Catálogo — Gardenia Bloom Perfumería"
+  description: "Explora nuestra colección de perfumes artesanales. Notas únicas, fragancias de autor."
+  keywords:
+    - catalogo perfumes artesanales
+    - perfumes naturales
+
+analytics:
+  ga4: false
+  pixel_meta: false
+  hotjar: false
+
+notes: ""

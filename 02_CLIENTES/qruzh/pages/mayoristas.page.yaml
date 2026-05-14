@@ -1,0 +1,27 @@
+id: mayoristas
+client_id: qruzh
+name: "Mayoristas / Distribuidores"
+path: "/pages/mayoristas"
+status: activo
+type: landing
+version: "2026-04-01"
+last_updated: "2026-04-01"
+
+features:
+  - informacion_mayoristas
+  - formulario_solicitud
+  - catalogo_mayorista_link
+
+seo:
+  title: "Mayoristas — QRUZH Distribuidores"
+  description: "Programa de mayoristas y distribuidores de accesorios para celular."
+  keywords:
+    - mayoristas accesorios celular
+    - distribuidores qruzh
+
+analytics:
+  ga4: false
+  pixel_meta: false
+  hotjar: false
+
+notes: "Canal B2B para distribuidores y tiendas."

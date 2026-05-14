@@ -1,0 +1,17 @@
+id: whatsapp_sales_bot
+client_id: qruzh
+name: "WhatsApp Sales Bot"
+type: bot
+status: en_desarrollo
+url: ""
+repo: ""
+tech:
+  - WhatsApp Business API
+  - Cloudflare Workers
+  - Claude AI
+access:
+  auth: "WhatsApp API token"
+  roles: []
+version: "0.1"
+last_updated: "2026-05-01"
+notes: "Bot de ventas asistidas por WhatsApp. En planificación/desarrollo."

@@ -1,0 +1,28 @@
+id: producto
+client_id: qruzh
+name: "Página de Producto"
+path: "/products/{handle}"
+status: activo
+type: detalle
+version: "2026-05-01"
+last_updated: "2026-05-01"
+
+features:
+  - galeria_imagenes
+  - selector_variante
+  - boton_comprar
+  - boton_whatsapp
+  - descripcion_producto
+  - productos_relacionados
+
+seo:
+  title: "{Nombre Producto} — QRUZH"
+  description: "Descripción dinámica por producto."
+  keywords: []
+
+analytics:
+  ga4: false
+  pixel_meta: false
+  hotjar: false
+
+notes: "Template de producto Shopify. Incluye CTA a WhatsApp para ventas asistidas."

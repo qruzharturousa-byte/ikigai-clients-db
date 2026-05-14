@@ -1,0 +1,30 @@
+id: home
+client_id: gardenia_perfumeria
+name: "Home / Inicio"
+path: "/"
+status: en_desarrollo
+type: landing
+version: "2025-01-01"
+last_updated: "2025-01-01"
+
+features:
+  - hero_marca
+  - historia_gardenia
+  - productos_destacados
+  - valores_artesanales
+  - cta_catalogo
+
+seo:
+  title: "Gardenia Bloom — Perfumería Artesanal Mexicana"
+  description: "Perfumes artesanales de autor hechos en México. Gardenia Bloom."
+  keywords:
+    - perfumeria artesanal mexico
+    - perfumes naturales mexico
+    - gardenia bloom
+
+analytics:
+  ga4: false
+  pixel_meta: false
+  hotjar: false
+
+notes: "Diseño basado en branding completo. Colores, tipografía y tokens definidos en Brand Book."

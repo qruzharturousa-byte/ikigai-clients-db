@@ -1,0 +1,29 @@
+id: mantenimiento_albercas
+client_id: torreland
+name: "Mantenimiento de Albercas"
+path: "/servicios/mantenimiento-albercas"
+status: activo
+type: landing
+version: "2026-05-01"
+last_updated: "2026-05-01"
+
+features:
+  - descripcion_servicio
+  - galeria_trabajos
+  - cta_cotizacion
+  - formulario_contacto
+
+seo:
+  title: "Mantenimiento de Albercas en Cancún — Torre Land"
+  description: "Mantenimiento profesional de albercas en Cancún y Riviera Maya. Bitácora digital DOMUS."
+  keywords:
+    - mantenimiento albercas cancun
+    - limpieza albercas cancun
+    - servicio piscinas cancun
+
+analytics:
+  ga4: false
+  pixel_meta: false
+  hotjar: false
+
+notes: "Sistema DOMUS PoolLog v1.0 para registro digital de mantenimientos."

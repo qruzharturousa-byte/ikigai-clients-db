@@ -1,0 +1,27 @@
+id: contacto
+client_id: gardenia_perfumeria
+name: "Contacto"
+path: "/contacto"
+status: en_desarrollo
+type: formulario
+version: "2025-01-01"
+last_updated: "2025-01-01"
+
+features:
+  - formulario_contacto
+  - whatsapp_link
+  - redes_sociales
+
+seo:
+  title: "Contacto — Gardenia Bloom"
+  description: "Contáctanos para pedidos especiales o consultas sobre nuestros perfumes."
+  keywords:
+    - contacto gardenia bloom
+    - pedidos perfumes artesanales
+
+analytics:
+  ga4: false
+  pixel_meta: false
+  hotjar: false
+
+notes: ""

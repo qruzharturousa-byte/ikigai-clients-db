@@ -1,0 +1,52 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "ikigai/deploy.schema.json",
+  "title": "IKIGAI Deploy",
+  "description": "Schema para el registro de deploy de un cliente en un ambiente",
+  "type": "object",
+  "required": ["client_id", "env", "status", "version"],
+  "additionalProperties": false,
+  "properties": {
+    "client_id": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9_]*$"
+    },
+    "env": {
+      "type": "string",
+      "enum": ["production", "staging", "development"]
+    },
+    "status": {
+      "type": "string",
+      "enum": ["live", "deploying", "paused", "error", "pending"]
+    },
+    "version": {
+      "type": "string",
+      "description": "Versión en este ambiente (YYYY-MM-DD o vX.Y.Z)"
+    },
+    "deployed_at": {
+      "type": "string",
+      "format": "date",
+      "description": "Fecha del último deploy"
+    },
+    "infra": {
+      "type": "object",
+      "description": "Infraestructura de deploy",
+      "properties": {
+        "host": { "type": "string" },
+        "provider": { "type": "string" },
+        "container": { "type": "string" },
+        "ssl_expiry": { "type": "string", "format": "date" },
+        "cdn": { "type": "string" }
+      }
+    },
+    "healthcheck": {
+      "type": "object",
+      "properties": {
+        "url": { "type": "string" },
+        "last_check": { "type": "string", "format": "date-time" },
+        "ok": { "type": "boolean" }
+      }
+    },
+    "notes": { "type": "string" }
+  }
+}

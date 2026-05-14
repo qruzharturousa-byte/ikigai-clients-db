@@ -1,0 +1,18 @@
+id: reportes
+client_id: qruzh
+name: "Reportes y Analytics"
+type: reportes
+status: en_desarrollo
+url: "https://admin.qruzh.com.mx/reportes"
+repo: "qruzh-admin"
+tech:
+  - Supabase
+  - Google Sheets
+  - Cloudflare D1
+access:
+  auth: "JWT (admin panel)"
+  roles:
+    - admin
+version: "2026-05-01"
+last_updated: "2026-05-01"
+notes: "Reportes de ventas, conversiones y sesiones bot. Pendiente: dashboard completo."

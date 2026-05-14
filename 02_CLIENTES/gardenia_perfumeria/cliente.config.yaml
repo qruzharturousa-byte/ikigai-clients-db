@@ -1,0 +1,38 @@
+id: gardenia_perfumeria
+name: "Gardenia Bloom"
+type: perfumeria
+status: en_desarrollo
+priority: media
+created_at: "2025-01-01"
+
+contact:
+  company: "Gardenia Bloom"
+  location: "México"
+
+domains:
+  - url: "pendiente"
+    env: staging
+    status: pendiente
+
+repos: []
+
+tech:
+  frontend: []
+  backend: []
+  infra: []
+  ai: []
+  payments: []
+
+branding:
+  colores_primarios: []
+  fuentes: []
+  assets_path: "/Users/arturo/Documents/Perfumeria Gardenia Bloom/"
+
+notes: |
+  Perfumería artesanal mexicana. Marca: Gardenia Bloom.
+  Branding COMPLETO: Brand Book, logos, tokens de color, tipografías.
+  Assets locales en: /Users/arturo/Documents/Perfumeria Gardenia Bloom/
+  Memoria de proyecto: references/memory/project_gardenia_bloom.md
+  Dominio pendiente de definir y registrar.
+  Stack tecnológico por definir.
+  Prioridad media — retomar cuando los proyectos activos estén estables.

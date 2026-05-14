@@ -1,0 +1,67 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "ikigai/page.schema.json",
+  "title": "IKIGAI Page",
+  "description": "Schema para una página web dentro de un cliente IKIGAI",
+  "type": "object",
+  "required": ["id", "client_id", "name", "path", "status"],
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9_]*$",
+      "description": "ID único de página dentro del cliente"
+    },
+    "client_id": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9_]*$",
+      "description": "ID del cliente al que pertenece"
+    },
+    "name": {
+      "type": "string",
+      "description": "Nombre legible de la página"
+    },
+    "path": {
+      "type": "string",
+      "description": "Ruta URL de la página (ej. /, /contacto)"
+    },
+    "status": {
+      "type": "string",
+      "enum": ["activo", "en_desarrollo", "pausado", "deprecado"]
+    },
+    "type": {
+      "type": "string",
+      "enum": ["landing", "listado", "detalle", "formulario", "dashboard", "ecommerce", "institucional", "otro"]
+    },
+    "version": {
+      "type": "string",
+      "description": "Versión actual (YYYY-MM-DD o vX.Y.Z)"
+    },
+    "last_updated": {
+      "type": "string",
+      "format": "date"
+    },
+    "features": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Funcionalidades presentes en esta página"
+    },
+    "seo": {
+      "type": "object",
+      "properties": {
+        "title": { "type": "string" },
+        "description": { "type": "string" },
+        "keywords": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "analytics": {
+      "type": "object",
+      "properties": {
+        "ga4": { "type": "boolean" },
+        "pixel_meta": { "type": "boolean" },
+        "hotjar": { "type": "boolean" }
+      }
+    },
+    "notes": { "type": "string" }
+  }
+}

@@ -1,0 +1,27 @@
+id: administracion_condominios
+client_id: torreland
+name: "Administración de Condominios"
+path: "/servicios/administracion-condominios"
+status: activo
+type: landing
+version: "2026-05-01"
+last_updated: "2026-05-01"
+
+features:
+  - descripcion_servicio
+  - beneficios
+  - cta_cotizacion
+
+seo:
+  title: "Administración de Condominios en Cancún — Torre Land"
+  description: "Administración profesional de condominios en Cancún. Reportes, evidencias y control de mantenimiento."
+  keywords:
+    - administracion condominios cancun
+    - administrador condominios cancun
+
+analytics:
+  ga4: false
+  pixel_meta: false
+  hotjar: false
+
+notes: ""

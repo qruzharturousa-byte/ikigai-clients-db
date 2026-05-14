@@ -1,0 +1,27 @@
+id: contacto
+client_id: torreland
+name: "Contacto"
+path: "/contacto"
+status: activo
+type: formulario
+version: "2026-05-01"
+last_updated: "2026-05-01"
+
+features:
+  - formulario_contacto
+  - whatsapp_link
+  - mapa_ubicacion
+
+seo:
+  title: "Contacto — Torre Land SA de CV"
+  description: "Contáctanos para cotizaciones y servicios de mantenimiento en Cancún."
+  keywords:
+    - contacto torre land
+    - cotizacion mantenimiento cancun
+
+analytics:
+  ga4: false
+  pixel_meta: false
+  hotjar: false
+
+notes: ""

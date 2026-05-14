@@ -1,0 +1,50 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "ikigai/project.schema.json",
+  "title": "IKIGAI Project",
+  "description": "Schema para un sistema/proyecto interno de un cliente (admin, CRM, bitácoras, etc.)",
+  "type": "object",
+  "required": ["id", "client_id", "name", "type", "status"],
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9_]*$"
+    },
+    "client_id": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9_]*$"
+    },
+    "name": { "type": "string" },
+    "type": {
+      "type": "string",
+      "enum": ["admin_panel", "crm", "inventario", "bitacoras", "reportes", "evidencias", "bot", "api", "otro"]
+    },
+    "status": {
+      "type": "string",
+      "enum": ["activo", "en_desarrollo", "pausado", "deprecado"]
+    },
+    "url": {
+      "type": "string",
+      "description": "URL de acceso (si aplica)"
+    },
+    "repo": {
+      "type": "string",
+      "description": "Nombre del repositorio"
+    },
+    "tech": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "access": {
+      "type": "object",
+      "properties": {
+        "auth": { "type": "string", "description": "Método de autenticación (jwt, oauth, basic)" },
+        "roles": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "version": { "type": "string" },
+    "last_updated": { "type": "string", "format": "date" },
+    "notes": { "type": "string" }
+  }
+}

@@ -1,0 +1,19 @@
+id: reportes_mantenimiento
+client_id: torreland
+name: "Reportes de Mantenimiento"
+type: reportes
+status: en_desarrollo
+url: ""
+repo: "domus-bitacoras"
+tech:
+  - Google Sheets
+  - Google Apps Script
+  - Cloudflare R2
+access:
+  auth: "Google OAuth"
+  roles:
+    - admin
+    - supervisor
+version: "0.1"
+last_updated: "2026-05-11"
+notes: "Reportes fotográficos de mantenimiento. Evidencias en Cloudflare R2."

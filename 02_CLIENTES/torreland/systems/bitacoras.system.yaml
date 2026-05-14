@@ -1,0 +1,26 @@
+id: bitacoras
+client_id: torreland
+name: "DOMUS PoolLog — Bitácora Digital de Albercas"
+type: bitacoras
+status: activo
+url: ""
+repo: "domus-bitacoras"
+tech:
+  - Google Forms
+  - Google Sheets
+  - Google Drive
+  - Google Apps Script
+access:
+  auth: "Google OAuth"
+  roles:
+    - tecnico
+    - supervisor
+    - admin
+version: "1.0"
+last_updated: "2026-05-11"
+notes: |
+  DOMUS PoolLog v1.0 implementado 2026-05-11.
+  Scripts en /Users/arturo/DOMUS/bitacoras_albercas/.
+  SOP: sops/SOP_bitacora_albercas_domus_v1.md.
+  Fase 2: AppSheet → bitacoras.torreland.com.mx (pendiente).
+  Logo: Torre Land SA de CV.

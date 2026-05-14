@@ -1,0 +1,21 @@
+client_id: gardenia_perfumeria
+env: staging
+status: pending
+version: "0.1"
+deployed_at: "2025-01-01"
+
+infra:
+  host: ""
+  provider: "por_definir"
+  container: ""
+  ssl_expiry: ""
+  cdn: ""
+
+healthcheck:
+  url: ""
+  ok: false
+
+notes: |
+  Stack por definir. Dominio por registrar.
+  Branding completo disponible en /Users/arturo/Documents/Perfumeria Gardenia Bloom/
+  Esperando decisión de dominio y plataforma (Shopify / Next.js / otro).

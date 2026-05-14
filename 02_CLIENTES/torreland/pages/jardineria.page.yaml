@@ -1,0 +1,27 @@
+id: jardineria
+client_id: torreland
+name: "Jardinería"
+path: "/servicios/jardineria"
+status: activo
+type: landing
+version: "2026-05-01"
+last_updated: "2026-05-01"
+
+features:
+  - descripcion_servicio
+  - galeria_trabajos
+  - cta_cotizacion
+
+seo:
+  title: "Jardinería en Cancún — Torre Land"
+  description: "Servicios de jardinería y áreas verdes en Cancún y Riviera Maya."
+  keywords:
+    - jardineria cancun
+    - mantenimiento jardines cancun
+
+analytics:
+  ga4: false
+  pixel_meta: false
+  hotjar: false
+
+notes: ""

@@ -1,0 +1,36 @@
+# Entorno
+.env
+.env.local
+.env.*.local
+*.env
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Temporales
+*.tmp
+*.bak
+*.log
+
+# Credenciales (nunca en repo)
+*.key
+*.pem
+*.p12
+*credentials*.json
+*service_account*.json
+*secret*.json

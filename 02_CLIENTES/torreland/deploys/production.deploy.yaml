@@ -1,0 +1,22 @@
+client_id: torreland
+env: production
+status: live
+version: "2026-05-06"
+deployed_at: "2026-05-06"
+
+infra:
+  host: "31.97.157.119"
+  provider: "VPS + Cloudflare"
+  container: "Docker + Traefik"
+  ssl_expiry: ""
+  cdn: "Cloudflare"
+
+healthcheck:
+  url: "https://torreland.com.mx"
+  ok: true
+
+notes: |
+  Next.js en VPS Docker con Traefik como reverse proxy.
+  Incidente conocido: IP drift en Traefik — cron auto-fix instalado en Mac.
+  Media en Cloudflare R2 (bucket qruzh-master-raw).
+  SSL gestionado por Traefik/Let's Encrypt.

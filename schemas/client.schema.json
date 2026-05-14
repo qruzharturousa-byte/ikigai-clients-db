@@ -1,0 +1,83 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "ikigai/client.schema.json",
+  "title": "IKIGAI Client",
+  "description": "Schema de configuración para un cliente en el ecosistema IKIGAI",
+  "type": "object",
+  "required": ["id", "name", "type", "status", "contact", "tech"],
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9_]*$",
+      "description": "Identificador único snake_case, inmutable"
+    },
+    "name": {
+      "type": "string",
+      "description": "Nombre comercial del cliente"
+    },
+    "type": {
+      "type": "string",
+      "enum": ["ecommerce", "servicios", "perfumeria", "inmobiliaria", "restaurante", "otro"],
+      "description": "Tipo de negocio"
+    },
+    "status": {
+      "type": "string",
+      "enum": ["activo", "en_desarrollo", "pausado", "deprecado"],
+      "description": "Estado operativo del cliente"
+    },
+    "priority": {
+      "type": "string",
+      "enum": ["alta", "media", "baja"],
+      "default": "media"
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date",
+      "description": "Fecha de alta YYYY-MM-DD"
+    },
+    "contact": {
+      "type": "object",
+      "required": ["company"],
+      "properties": {
+        "company": { "type": "string" },
+        "owner": { "type": "string" },
+        "email": { "type": "string", "format": "email" },
+        "phone": { "type": "string" },
+        "location": { "type": "string" }
+      }
+    },
+    "domains": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["url", "env"],
+        "properties": {
+          "url": { "type": "string" },
+          "env": { "type": "string", "enum": ["production", "staging", "development"] },
+          "status": { "type": "string", "enum": ["activo", "pendiente", "deprecado"] }
+        }
+      }
+    },
+    "repos": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Nombres de repositorios GitHub relacionados"
+    },
+    "tech": {
+      "type": "object",
+      "description": "Stack tecnológico del cliente",
+      "properties": {
+        "frontend": { "type": "array", "items": { "type": "string" } },
+        "backend": { "type": "array", "items": { "type": "string" } },
+        "infra": { "type": "array", "items": { "type": "string" } },
+        "ai": { "type": "array", "items": { "type": "string" } },
+        "payments": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "notes": {
+      "type": "string",
+      "description": "Notas adicionales, contexto, pendientes"
+    }
+  }
+}

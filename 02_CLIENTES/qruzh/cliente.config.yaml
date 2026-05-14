@@ -1,0 +1,68 @@
+id: qruzh
+name: "QRUZH"
+type: ecommerce
+status: activo
+priority: alta
+created_at: "2024-01-01"
+
+contact:
+  company: "QRUZH"
+  location: "Cancún, Quintana Roo, México"
+
+domains:
+  - url: "qruzh.com.mx"
+    env: production
+    status: activo
+  - url: "admin.qruzh.com.mx"
+    env: production
+    status: activo
+  - url: "pago.qruzh.com.mx"
+    env: production
+    status: activo
+  - url: "bot.qruzh.com.mx"
+    env: production
+    status: activo
+
+repos:
+  - qruzh-web
+  - qruzh-admin
+  - qruzhbot-web
+
+tech:
+  frontend:
+    - Shopify Liquid
+    - HTML
+    - CSS
+    - JavaScript
+  backend:
+    - Cloudflare Workers
+    - Node.js
+    - Bun
+  infra:
+    - Cloudflare
+    - Supabase
+    - Cloudflare D1
+    - Cloudflare R2
+    - VPS Docker
+    - Nginx
+    - Traefik
+  ai:
+    - Claude AI (claude-sonnet-4-6)
+    - Cloudflare Vectorize (RAG)
+    - Whisper (transcripción voz)
+  payments:
+    - Mercado Pago
+    - CLABE Bancaria
+
+branding:
+  colores_primarios: []
+  fuentes: []
+  assets_path: ""
+
+notes: |
+  Ecommerce de accesorios para celular en Cancún QR.
+  QruzhBot Web v2.1 LIVE en qruzh.com.mx — RAG Vectorize + memoria sesiones + 20 intents.
+  Admin Panel LIVE en admin.qruzh.com.mx — Docker, SSL wildcard válido hasta 2026-08-01.
+  Página de pago LIVE en pago.qruzh.com.mx — CLABE 722969010534082026.
+  Pendiente: 4 usuarios admin + sesiones Drive + auto-mejora brain bot.
+  ⚠️ Tailscale puede bloquear DNS local del admin — pausar o usar 1.1.1.1.

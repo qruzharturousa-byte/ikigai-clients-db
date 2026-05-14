@@ -1,0 +1,38 @@
+# cliente.config.yaml — Plantilla base (copiar y modificar)
+# Convenciones: snake_case para IDs, YYYY-MM-DD para fechas
+
+id: cliente_id                          # ← cambiar: snake_case único e inmutable
+name: "Nombre del Cliente"
+type: otro                              # ecommerce | servicios | perfumeria | inmobiliaria | restaurante | otro
+status: en_desarrollo                   # activo | en_desarrollo | pausado | deprecado
+priority: media                         # alta | media | baja
+created_at: "2026-01-01"
+
+contact:
+  company: "Nombre de la empresa"
+  owner: "Nombre del dueño"
+  email: "contacto@empresa.com"
+  phone: "+52 998 000 0000"
+  location: "Ciudad, Estado, México"
+
+domains:
+  - url: "dominio.com.mx"
+    env: production                     # production | staging | development
+    status: pendiente                   # activo | pendiente | deprecado
+
+repos: []                               # nombres de repos GitHub
+
+tech:
+  frontend: []                          # Shopify Liquid, Next.js, React, etc.
+  backend: []                           # Node.js, Python, Bun, Cloudflare Workers, etc.
+  infra: []                             # VPS, Docker, Traefik, Cloudflare, Supabase, etc.
+  ai: []                                # Claude AI, Whisper, Vectorize, etc.
+  payments: []                          # Mercado Pago, Stripe, CLABE, etc.
+
+branding:
+  colores_primarios: []
+  fuentes: []
+  assets_path: ""                       # ruta local o Drive de los assets de marca
+
+notes: |
+  Notas adicionales, contexto, pendientes específicos de este cliente.

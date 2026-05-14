@@ -1,0 +1,27 @@
+id: nosotros
+client_id: gardenia_perfumeria
+name: "Nosotros / Historia"
+path: "/nosotros"
+status: en_desarrollo
+type: institucional
+version: "2025-01-01"
+last_updated: "2025-01-01"
+
+features:
+  - historia_marca
+  - valores
+  - proceso_artesanal
+
+seo:
+  title: "Nosotros — Gardenia Bloom"
+  description: "La historia detrás de Gardenia Bloom. Perfumería artesanal mexicana con alma."
+  keywords:
+    - historia gardenia bloom
+    - perfumeria artesanal mexicana
+
+analytics:
+  ga4: false
+  pixel_meta: false
+  hotjar: false
+
+notes: ""

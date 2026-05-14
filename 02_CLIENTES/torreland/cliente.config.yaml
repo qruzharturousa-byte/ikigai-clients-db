@@ -1,0 +1,49 @@
+id: torreland
+name: "Torre Land SA de CV"
+type: servicios
+status: activo
+priority: alta
+created_at: "2024-06-01"
+
+contact:
+  company: "Torre Land SA de CV"
+  location: "Cancún, Quintana Roo, México"
+
+domains:
+  - url: "torreland.com.mx"
+    env: production
+    status: activo
+
+repos:
+  - torreland-web
+  - domus-bitacoras
+
+tech:
+  frontend:
+    - Next.js
+    - React
+    - Tailwind CSS
+  backend:
+    - Node.js
+    - Docker
+  infra:
+    - VPS (31.97.157.119)
+    - Traefik
+    - Cloudflare R2
+    - Nginx
+  ai: []
+  payments: []
+
+branding:
+  colores_primarios: []
+  fuentes: []
+  assets_path: ""
+
+notes: |
+  Empresa de servicios: mantenimiento de albercas, jardinería, administración de condominios.
+  Web LIVE y estable en torreland.com.mx.
+  Sistema DOMUS PoolLog v1.0 implementado 2026-05-11: bitácora digital de albercas
+  (Google Forms + Sheets + Drive + Apps Script).
+  Incidente conocido: Traefik IP drift — cron auto-fix instalado en Mac.
+  Regla crítica fotos: SOLO editar PORTFOLIO_ITEMS, no tocar otras secciones.
+  Último presupuesto DOMUS: #0117 (Astoria Soho 2, pintura exterior, 2026-05-06).

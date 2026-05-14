@@ -1,0 +1,21 @@
+id: evidencias
+client_id: torreland
+name: "Gestión de Evidencias (Fotos/Media)"
+type: evidencias
+status: activo
+url: ""
+repo: ""
+tech:
+  - Cloudflare R2
+  - Google Drive
+access:
+  auth: "API token / OAuth"
+  roles:
+    - tecnico
+    - admin
+version: "1.0"
+last_updated: "2026-05-06"
+notes: |
+  Media de Torre Land en bucket R2 qruzh-master-raw (cuenta qruzharturousa@gmail.com).
+  Prefijo: torreland/clientes/dream-lagoons-cancun/ (Dream Lagoons WebP).
+  Secretos: /Users/arturo/.secrets/r2_torreland.env.

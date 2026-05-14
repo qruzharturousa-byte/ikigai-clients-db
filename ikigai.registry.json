@@ -1,0 +1,92 @@
+{
+  "$schema": "./schemas/client.schema.json",
+  "version": "1.0.0",
+  "updated_at": "2026-05-14",
+  "description": "Registro global de clientes del ecosistema IKIGAI",
+  "clients": [
+    {
+      "id": "qruzh",
+      "name": "QRUZH",
+      "type": "ecommerce",
+      "status": "activo",
+      "priority": "alta",
+      "created_at": "2024-01-01",
+      "config_path": "02_CLIENTES/qruzh/cliente.config.yaml",
+      "contact": {
+        "company": "QRUZH",
+        "location": "Cancún, Quintana Roo, México"
+      },
+      "domains": [
+        { "url": "qruzh.com.mx", "env": "production", "status": "activo" },
+        { "url": "admin.qruzh.com.mx", "env": "production", "status": "activo" },
+        { "url": "pago.qruzh.com.mx", "env": "production", "status": "activo" },
+        { "url": "bot.qruzh.com.mx", "env": "production", "status": "activo" }
+      ],
+      "repos": ["qruzh-web", "qruzh-admin", "qruzhbot-web"],
+      "tech": {
+        "frontend": ["Shopify Liquid", "HTML", "CSS", "JavaScript"],
+        "backend": ["Cloudflare Workers", "Node.js", "Bun"],
+        "infra": ["Cloudflare", "Supabase", "D1", "R2", "VPS Docker"],
+        "ai": ["Claude AI", "Cloudflare Vectorize", "Whisper"],
+        "payments": ["Mercado Pago", "CLABE"]
+      },
+      "pages_count": 6,
+      "systems_count": 4,
+      "bots_count": 3
+    },
+    {
+      "id": "torreland",
+      "name": "Torre Land SA de CV",
+      "type": "servicios",
+      "status": "activo",
+      "priority": "alta",
+      "created_at": "2024-06-01",
+      "config_path": "02_CLIENTES/torreland/cliente.config.yaml",
+      "contact": {
+        "company": "Torre Land SA de CV",
+        "location": "Cancún, Quintana Roo, México"
+      },
+      "domains": [
+        { "url": "torreland.com.mx", "env": "production", "status": "activo" }
+      ],
+      "repos": ["torreland-web", "domus-bitacoras"],
+      "tech": {
+        "frontend": ["Next.js", "React", "Tailwind CSS"],
+        "backend": ["Node.js", "Docker"],
+        "infra": ["VPS", "Traefik", "Cloudflare R2", "Nginx"],
+        "ai": [],
+        "payments": []
+      },
+      "pages_count": 6,
+      "systems_count": 4,
+      "bots_count": 0
+    },
+    {
+      "id": "gardenia_perfumeria",
+      "name": "Gardenia Bloom",
+      "type": "perfumeria",
+      "status": "en_desarrollo",
+      "priority": "media",
+      "created_at": "2025-01-01",
+      "config_path": "02_CLIENTES/gardenia_perfumeria/cliente.config.yaml",
+      "contact": {
+        "company": "Gardenia Bloom",
+        "location": "México"
+      },
+      "domains": [
+        { "url": "pendiente", "env": "staging", "status": "pendiente" }
+      ],
+      "repos": [],
+      "tech": {
+        "frontend": [],
+        "backend": [],
+        "infra": [],
+        "ai": [],
+        "payments": []
+      },
+      "pages_count": 4,
+      "systems_count": 0,
+      "bots_count": 0
+    }
+  ]
+}

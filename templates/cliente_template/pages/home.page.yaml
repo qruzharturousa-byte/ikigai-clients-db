@@ -1,0 +1,27 @@
+# home.page.yaml — Plantilla de página (copiar y modificar)
+id: home
+client_id: cliente_id                   # ← debe coincidir con el ID del cliente
+name: "Home / Inicio"
+path: "/"
+status: en_desarrollo                   # activo | en_desarrollo | pausado | deprecado
+type: landing                           # landing | listado | detalle | formulario | dashboard | ecommerce | institucional | otro
+version: "2026-01-01"
+last_updated: "2026-01-01"
+
+features:
+  - hero_banner
+  - llamada_a_accion
+
+seo:
+  title: "Nombre del Cliente — Descripción breve"
+  description: "Descripción SEO de la página home."
+  keywords:
+    - keyword1
+    - keyword2
+
+analytics:
+  ga4: false
+  pixel_meta: false
+  hotjar: false
+
+notes: ""

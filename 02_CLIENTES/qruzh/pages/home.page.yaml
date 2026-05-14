@@ -1,0 +1,30 @@
+id: home
+client_id: qruzh
+name: "Home / Inicio"
+path: "/"
+status: activo
+type: ecommerce
+version: "2026-05-11"
+last_updated: "2026-05-11"
+
+features:
+  - hero_banner
+  - colecciones_destacadas
+  - productos_nuevos
+  - chat_qruzhbot
+  - whatsapp_cta
+
+seo:
+  title: "QRUZH — Accesorios para celular en Cancún"
+  description: "Fundas, protectores y accesorios para celular. Envíos a todo México."
+  keywords:
+    - fundas celular cancun
+    - accesorios iphone cancun
+    - fundas personalizadas
+
+analytics:
+  ga4: false
+  pixel_meta: false
+  hotjar: false
+
+notes: "Página principal Shopify. QruzhBot Web v2.1 activo como widget de chat."
