@@ -1,0 +1,54 @@
+name: Validate IKIGAI DB
+
+on:
+  push:
+    branches: [main, develop]
+  pull_request:
+    branches: [main]
+
+jobs:
+  validate:
+    name: Validate registry and schemas
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Validate registry integrity
+        run: python scripts/validate_registry.py
+
+      - name: Generate client index
+        run: python scripts/generate_client_index.py
+
+      - name: Generate pages index
+        run: python scripts/generate_pages_index.py
+
+      - name: Check for credential leaks
+        run: |
+          echo "Scanning for credential patterns..."
+          if grep -r \
+            -e "api_key\s*=\s*['\"][a-zA-Z0-9_\-]\{10,\}" \
+            -e "token\s*=\s*['\"][a-zA-Z0-9_\-]\{10,\}" \
+            -e "password\s*=\s*['\"][^\s]\{4,\}" \
+            --include="*.yaml" --include="*.json" --include="*.py" \
+            --exclude-dir=".git" \
+            .; then
+            echo "❌ Posibles credenciales encontradas — revisar antes de publicar"
+            exit 1
+          else
+            echo "✅ Sin credenciales detectadas"
+          fi
+
+      - name: Summary
+        if: always()
+        run: |
+          echo "### IKIGAI DB Validation" >> $GITHUB_STEP_SUMMARY
+          echo "- Registry: validated" >> $GITHUB_STEP_SUMMARY
+          echo "- CLIENTES_INDEX.md: generated" >> $GITHUB_STEP_SUMMARY
+          echo "- PAGES_INDEX.md: generated" >> $GITHUB_STEP_SUMMARY

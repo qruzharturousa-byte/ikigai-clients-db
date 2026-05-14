@@ -1,6 +1,6 @@
 # PAGES_INDEX — Páginas del ecosistema IKIGAI
 
-> Generado automáticamente: 2026-05-14 01:23  
+> Generado automáticamente: 2026-05-14 01:26  
 > Total páginas: **16** en **3** clientes
 
 ## Tabla global de páginas

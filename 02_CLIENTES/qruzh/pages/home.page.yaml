@@ -4,15 +4,42 @@ name: "Home / Inicio"
 path: "/"
 status: activo
 type: ecommerce
-version: "2026-05-11"
-last_updated: "2026-05-11"
+version_actual: "v2.1.0"
+version_staging: ""
+fecha_creacion: "2024-01-01"
+last_updated: "2026-05-14"
+
+urls:
+  produccion: "https://qruzh.com.mx"
+  staging: ""
+  preview: ""
+
+repo:
+  nombre: "qruzh-web"
+  rama_produccion: "main"
+  plataforma: "Shopify"
+  theme_id: "184131191080"
 
 features:
   - hero_banner
   - colecciones_destacadas
   - productos_nuevos
-  - chat_qruzhbot
+  - chat_qruzhbot_v2_1
   - whatsapp_cta
+  - purchase_intent_detection
+  - memoria_sesiones
+
+qruzhbot:
+  version: "v2.1.0"
+  status: "LIVE"
+  launch_date: "2026-05-11"
+  modelo: "claude-sonnet-4-6"
+  capacidades:
+    - RAG Vectorize (catálogo conectado)
+    - Memoria de sesiones
+    - Purchase intent detection (20 intents)
+    - Escalada a WhatsApp
+    - Transcripción de voz (Whisper)
 
 seo:
   title: "QRUZH — Accesorios para celular en Cancún"
@@ -27,4 +54,15 @@ analytics:
   pixel_meta: false
   hotjar: false
 
-notes: "Página principal Shopify. QruzhBot Web v2.1 activo como widget de chat."
+pendientes:
+  - 4 usuarios admin con acceso al panel
+  - Sesiones Drive conectadas
+  - Auto-mejora brain QruzhBot
+  - GA4 o Meta Pixel activar
+
+aprobacion:
+  responsable: "Arturo Monroy"
+  status: "aprobado"
+  fecha: "2026-05-11"
+
+notes: "Home principal Shopify LIVE. QruzhBot Web v2.1 activo como widget de chat desde 2026-05-11."
