@@ -1,6 +1,6 @@
 # PAGES_INDEX — Páginas del ecosistema IKIGAI
 
-> Generado automáticamente: 2026-05-14 01:26  
+> Generado automáticamente: 2026-05-14 07:06  
 > Total páginas: **16** en **3** clientes
 
 ## Tabla global de páginas
@@ -13,10 +13,10 @@
 | `gardenia_perfumeria` | `nosotros` | Nosotros / Historia | `/nosotros` | 🔧 en_desarrollo | institucional | 2025-01-01 |
 | `qruzh` | `colecciones` | Colecciones | `/collections` | ✅ activo | listado | 2026-05-01 |
 | `qruzh` | `contacto` | Contacto | `/pages/contacto` | ✅ activo | formulario | 2026-04-01 |
-| `qruzh` | `home` | Home / Inicio | `/` | ✅ activo | ecommerce | 2026-05-11 |
+| `qruzh` | `home` | Home / Inicio | `/` | ✅ activo | ecommerce | — |
 | `qruzh` | `landing_fundas_personalizadas` | Landing — Fundas Personalizadas | `/pages/fundas-personalizadas` | ✅ activo | landing | 2026-04-01 |
 | `qruzh` | `mayoristas` | Mayoristas / Distribuidores | `/pages/mayoristas` | ✅ activo | landing | 2026-04-01 |
-| `qruzh` | `producto` | Página de Producto | `/products/{handle}` | ✅ activo | detalle | 2026-05-01 |
+| `qruzh` | `producto` | Página de Producto | `/products/{handle}` | ✅ activo | detalle | — |
 | `torreland` | `administracion_condominios` | Administración de Condominios | `/servicios/administracion-condominios` | ✅ activo | landing | 2026-05-01 |
 | `torreland` | `contacto` | Contacto | `/contacto` | ✅ activo | formulario | 2026-05-01 |
 | `torreland` | `home` | Home / Inicio | `/` | ✅ activo | landing | 2026-05-06 |

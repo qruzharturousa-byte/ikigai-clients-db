@@ -1,6 +1,6 @@
 # CLIENTES_INDEX — Ecosistema IKIGAI
 
-> Generado automáticamente: 2026-05-14 01:25  
+> Generado automáticamente: 2026-05-14 07:06  
 > Fuente: `ikigai.registry.json` · Total clientes: **3**
 
 ## Tabla de clientes
