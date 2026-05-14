@@ -10,9 +10,9 @@ contact:
   location: "México"
 
 domains:
-  - url: "pendiente"
+  - url: "gardenia.torreland.com.mx"
     env: staging
-    status: pendiente
+    status: provisional
 
 repos: []
 

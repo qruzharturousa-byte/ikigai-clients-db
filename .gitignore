@@ -34,3 +34,4 @@ __pycache__/
 *credentials*.json
 *service_account*.json
 *secret*.json
+.wrangler/

@@ -9,26 +9,39 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <style>
     :root {
-      --bg:         #f5f5f7;
-      --surface:    #ffffff;
-      --surface2:   #f9f9fb;
-      --border:     rgba(0,0,0,0.08);
-      --shadow-sm:  0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
-      --shadow-md:  0 4px 16px rgba(0,0,0,0.08), 0 2px 4px rgba(0,0,0,0.04);
-      --shadow-lg:  0 16px 48px rgba(0,0,0,0.12), 0 4px 12px rgba(0,0,0,0.06);
-      --text:       #1d1d1f;
-      --text-2:     #424245;
-      --text-3:     #6e6e73;
-      --accent:     #6366f1;
-      --accent2:    #8b5cf6;
+      /* ── Paleta IKIGAI oficial (extraída del logo) ── */
+      --teal:       #5BBFC4;
+      --teal-dark:  #3D9EA3;
+      --teal-light: #A8DDE0;
+      --teal-bg:    #EBF7F8;
+      --rose:       #C47890;
+      --rose-dark:  #9B5F73;
+      --rose-light: #E8A8BB;
+      --rose-bg:    #FAEEF2;
+      --blush:      #F4B8C8;
+      --gold:       #C4A882;
+      --gold-light: #E8D8C0;
+      /* ── Base ── */
+      --bg:         #F7F3EF;
+      --surface:    #FDFAF8;
+      --surface2:   #F4EFE9;
+      --border:     rgba(180,140,120,0.15);
+      --shadow-sm:  0 1px 3px rgba(100,60,50,0.07), 0 1px 2px rgba(100,60,50,0.04);
+      --shadow-md:  0 4px 16px rgba(100,60,50,0.10), 0 2px 4px rgba(100,60,50,0.05);
+      --shadow-lg:  0 16px 48px rgba(100,60,50,0.14), 0 4px 12px rgba(100,60,50,0.07);
+      --text:       #2C2018;
+      --text-2:     #4A3828;
+      --text-3:     #8A7060;
+      --accent:     var(--teal);
+      --accent2:    var(--rose);
       --green:      #1aa260;
       --green-bg:   #e8f8f0;
       --amber:      #d97706;
       --amber-bg:   #fef3c7;
       --red:        #dc2626;
       --red-bg:     #fee2e2;
-      --muted:      #6e6e73;
-      --muted-bg:   #f3f3f5;
+      --muted:      #8A7060;
+      --muted-bg:   #EDE8E2;
       --radius:     18px;
       --radius-sm:  10px;
     }
@@ -60,9 +73,13 @@
     .nav-brand {
       display: flex; align-items: center; gap: 10px;
     }
-    .nav-logo {
-      font-size: 17px; font-weight: 800; letter-spacing: -0.02em;
-      background: linear-gradient(90deg, #6366f1 0%, #8b5cf6 50%, #ec4899 100%);
+    .nav-logo-img {
+      height: 32px; width: 32px; border-radius: 8px;
+      object-fit: cover;
+    }
+    .nav-logo-text {
+      font-size: 17px; font-weight: 800; letter-spacing: 0.04em;
+      background: linear-gradient(90deg, #5BBFC4 0%, #C47890 60%, #C4A882 100%);
       -webkit-background-clip: text; -webkit-text-fill-color: transparent;
       background-clip: text;
     }
@@ -75,28 +92,28 @@
     /* ── HERO ────────────────────────────── */
     .hero {
       position: relative; overflow: hidden;
-      background: linear-gradient(145deg, #1a1a2e 0%, #16213e 40%, #0f3460 70%, #1a1a2e 100%);
+      background: linear-gradient(145deg, #1C1412 0%, #2A1F1A 35%, #1E2D2E 70%, #12211E 100%);
       padding: 80px 32px 72px;
       text-align: center;
     }
     .hero::before {
       content: '';
       position: absolute; inset: 0;
-      background: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(99,102,241,0.35) 0%, transparent 70%),
-                  radial-gradient(ellipse 50% 40% at 80% 100%, rgba(139,92,246,0.2) 0%, transparent 60%),
-                  radial-gradient(ellipse 40% 40% at 20% 80%, rgba(236,72,153,0.15) 0%, transparent 60%);
+      background: radial-gradient(ellipse 70% 55% at 50% 0%, rgba(91,191,196,0.28) 0%, transparent 65%),
+                  radial-gradient(ellipse 50% 40% at 85% 100%, rgba(196,120,144,0.22) 0%, transparent 60%),
+                  radial-gradient(ellipse 40% 40% at 15% 75%, rgba(196,168,130,0.15) 0%, transparent 60%);
       pointer-events: none;
     }
     .hero-orb {
       position: absolute;
       border-radius: 50%;
-      filter: blur(60px);
-      opacity: 0.4;
-      animation: float 8s ease-in-out infinite;
+      filter: blur(70px);
+      opacity: 0.5;
+      animation: float 9s ease-in-out infinite;
     }
-    .orb-1 { width: 300px; height: 300px; background: #6366f1; top: -80px; left: -60px; }
-    .orb-2 { width: 200px; height: 200px; background: #ec4899; bottom: -40px; right: 5%; animation-delay: -3s; }
-    .orb-3 { width: 150px; height: 150px; background: #8b5cf6; top: 30%; right: 20%; animation-delay: -5s; }
+    .orb-1 { width: 320px; height: 320px; background: #5BBFC4; top: -100px; left: -80px; }
+    .orb-2 { width: 220px; height: 220px; background: #C47890; bottom: -50px; right: 4%; animation-delay: -3.5s; }
+    .orb-3 { width: 160px; height: 160px; background: #C4A882; top: 25%; right: 18%; animation-delay: -6s; opacity: 0.3; }
     @keyframes float {
       0%, 100% { transform: translateY(0px); }
       50% { transform: translateY(-18px); }
@@ -104,40 +121,41 @@
     .hero-content { position: relative; z-index: 1; }
     .hero-eyebrow {
       display: inline-block;
-      font-size: 11px; font-weight: 600; letter-spacing: 0.12em;
+      font-size: 11px; font-weight: 600; letter-spacing: 0.14em;
       text-transform: uppercase;
-      color: rgba(255,255,255,0.6);
-      background: rgba(255,255,255,0.08);
-      border: 1px solid rgba(255,255,255,0.12);
+      color: rgba(255,255,255,0.55);
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(91,191,196,0.25);
       padding: 5px 14px; border-radius: 999px;
       margin-bottom: 20px;
     }
     .hero-title {
       font-size: clamp(36px, 6vw, 64px);
       font-weight: 800; letter-spacing: -0.04em;
-      background: linear-gradient(135deg, #ffffff 0%, rgba(255,255,255,0.7) 100%);
+      background: linear-gradient(135deg, #ffffff 0%, rgba(255,255,255,0.75) 100%);
       -webkit-background-clip: text; -webkit-text-fill-color: transparent;
       background-clip: text;
       line-height: 1.05;
       margin-bottom: 12px;
     }
     .hero-gradient-word {
-      background: linear-gradient(90deg, #818cf8, #c084fc, #f472b6);
+      background: linear-gradient(90deg, #7DE0E4, #E8A8BB, #E8D0A8);
       -webkit-background-clip: text; -webkit-text-fill-color: transparent;
       background-clip: text;
     }
     .hero-sub {
-      font-size: 17px; color: rgba(255,255,255,0.55);
+      font-size: 17px; color: rgba(255,255,255,0.45);
       font-weight: 400; line-height: 1.5;
       margin-bottom: 40px;
+      letter-spacing: 0.01em;
     }
 
     /* ── STATS BAR ───────────────────────── */
     .stats-bar {
       display: flex; align-items: center; justify-content: center;
       gap: 0; flex-wrap: wrap;
-      background: rgba(255,255,255,0.06);
-      border: 1px solid rgba(255,255,255,0.1);
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(91,191,196,0.2);
       border-radius: 20px; padding: 0 8px;
       max-width: 520px; margin: 0 auto;
       backdrop-filter: blur(20px);
@@ -223,8 +241,9 @@
     .bot-live-badge {
       position: absolute; top: 0; right: 0;
       font-size: 11px; font-weight: 600;
-      background: linear-gradient(135deg, #6366f1, #8b5cf6);
+      background: linear-gradient(135deg, var(--teal), var(--teal-dark));
       color: white; padding: 4px 10px; border-radius: 999px;
+      letter-spacing: 0.02em;
     }
 
     /* — Pills */
@@ -240,14 +259,14 @@
     /* — Domains */
     .domains-row { display: flex; flex-wrap: wrap; gap: 6px; }
     .domain-pill {
-      font-size: 12px; font-weight: 500; color: var(--accent);
+      font-size: 12px; font-weight: 500; color: var(--teal-dark);
       text-decoration: none;
-      background: #eef2ff; padding: 4px 12px; border-radius: 999px;
-      border: 1px solid #c7d2fe;
+      background: var(--teal-bg); padding: 4px 12px; border-radius: 999px;
+      border: 1px solid var(--teal-light);
       transition: background 0.15s, color 0.15s;
     }
     .domain-pill:hover {
-      background: var(--accent); color: white; border-color: var(--accent);
+      background: var(--teal); color: white; border-color: var(--teal);
     }
 
     /* — Metrics strip */
@@ -286,9 +305,9 @@
       padding: 4px 10px; border-radius: 8px;
     }
     .tag-bot {
-      background: linear-gradient(135deg, #eef2ff, #f5f3ff);
-      color: var(--accent);
-      border: 1px solid #c7d2fe;
+      background: linear-gradient(135deg, var(--teal-bg), #f0f9fa);
+      color: var(--teal-dark);
+      border: 1px solid var(--teal-light);
     }
     .tag-muted { background: var(--muted-bg); color: var(--muted); }
 
@@ -314,7 +333,8 @@
     .version-tag {
       flex-shrink: 0;
       font-size: 10px; font-weight: 600;
-      background: #d1fae5; color: #065f46;
+      background: var(--teal-bg); color: var(--teal-dark);
+      border: 1px solid var(--teal-light);
       padding: 2px 7px; border-radius: 999px;
     }
     .empty-state { font-size: 13px; color: var(--text-3); padding: 8px 0; }
@@ -329,8 +349,8 @@
     .footer-text a { color: var(--accent); text-decoration: none; font-weight: 500; }
     .footer-brand {
       display: inline-block; margin-top: 8px;
-      font-size: 13px; font-weight: 700; letter-spacing: -0.01em;
-      background: linear-gradient(90deg, #6366f1, #8b5cf6, #ec4899);
+      font-size: 13px; font-weight: 700; letter-spacing: 0.06em;
+      background: linear-gradient(90deg, #5BBFC4, #C47890, #C4A882);
       -webkit-background-clip: text; -webkit-text-fill-color: transparent;
       background-clip: text;
     }
@@ -351,12 +371,13 @@
 <nav>
   <div class="nav-inner">
     <div class="nav-brand">
-      <span class="nav-logo">IKIGAI</span>
+      <img src="assets/logo-ikigai.jpeg" alt="IKIGAI" class="nav-logo-img">
+      <span class="nav-logo-text">IKIGAI</span>
       <div class="nav-sep"></div>
       <span class="nav-sub">Panel Maestro</span>
     </div>
     <div class="nav-meta">
-      14 May 2026, 02:48 ·
+      14 May 2026, 03:02 ·
       <a href="https://github.com/qruzharturousa-byte/ikigai-clients-db" target="_blank">ikigai-clients-db ↗</a>
     </div>
   </div>
@@ -403,7 +424,7 @@
     
         <div class="card" style="--card-delay:0.0s">
           <div class="card-top">
-            <div class="avatar" style="background:linear-gradient(135deg, #6366f1, #8b5cf6)">Q</div>
+            <div class="avatar" style="background:linear-gradient(135deg, #5BBFC4, #3D9EA3)">Q</div>
             <div class="card-identity">
               <div class="card-name-row">
                 <h2 class="card-name">QRUZH</h2>
@@ -491,7 +512,7 @@
         </div>
         <div class="card" style="--card-delay:0.08s">
           <div class="card-top">
-            <div class="avatar" style="background:linear-gradient(135deg, #0ea5e9, #6366f1)">TL</div>
+            <div class="avatar" style="background:linear-gradient(135deg, #C47890, #9B5F73)">TL</div>
             <div class="card-identity">
               <div class="card-name-row">
                 <h2 class="card-name">Torre Land SA de CV</h2>
@@ -579,7 +600,7 @@
         </div>
         <div class="card" style="--card-delay:0.16s">
           <div class="card-top">
-            <div class="avatar" style="background:linear-gradient(135deg, #ec4899, #8b5cf6)">GB</div>
+            <div class="avatar" style="background:linear-gradient(135deg, #C4A882, #A08060)">GB</div>
             <div class="card-identity">
               <div class="card-name-row">
                 <h2 class="card-name">Gardenia Bloom</h2>
@@ -658,7 +679,7 @@
   <p class="footer-text">
     Generado automáticamente desde
     <a href="https://github.com/qruzharturousa-byte/ikigai-clients-db" target="_blank">ikigai-clients-db</a>
-    · 14 May 2026, 02:48
+    · 14 May 2026, 03:02
   </p>
   <div class="footer-brand">I K I G A I</div>
 </footer>
