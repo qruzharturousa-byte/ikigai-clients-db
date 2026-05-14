@@ -10,10 +10,8 @@ contact:
   location: "Cancún, Quintana Roo, México"
 
 domains:
-  - url: "qruzh.com.mx"
-    env: production
-    status: activo
-  - url: "admin.qruzh.com.mx"
+  primary: "qruzh.com.mx"
+  admin: "admin.qruzh.com.mx"
     env: production
     status: activo
   - url: "pago.qruzh.com.mx"

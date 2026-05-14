@@ -429,12 +429,13 @@ def generate_html(clients):
       margin-bottom: 28px;
     }}
     .hero-logo {{
-      width: 130px; height: 130px;
-      border-radius: 32px;
+      width: 200px; height: 200px;
+      border-radius: 48px;
       object-fit: cover;
-      box-shadow: 0 0 0 1px rgba(91,191,196,0.3),
-                  0 8px 40px rgba(0,0,0,0.5),
-                  0 0 80px rgba(91,191,196,0.15);
+      box-shadow: 0 0 0 1px rgba(91,191,196,0.35),
+                  0 12px 56px rgba(0,0,0,0.55),
+                  0 0 120px rgba(91,191,196,0.2),
+                  0 0 200px rgba(196,120,144,0.1);
       animation: fadeIn 0.8s ease both;
     }}
     @keyframes fadeIn {{

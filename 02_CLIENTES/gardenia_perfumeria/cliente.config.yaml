@@ -10,9 +10,7 @@ contact:
   location: "México"
 
 domains:
-  - url: "gardenia.torreland.com.mx"
-    env: staging
-    status: provisional
+  primary: "gardenia.torreland.com.mx"
 
 repos: []
 

@@ -10,9 +10,7 @@ contact:
   location: "Cancún, Quintana Roo, México"
 
 domains:
-  - url: "torreland.com.mx"
-    env: production
-    status: activo
+  primary: "torreland.com.mx"
 
 repos:
   - torreland-web
