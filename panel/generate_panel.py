@@ -380,7 +380,7 @@ def generate_html(clients):
       display: flex; align-items: center; gap: 10px;
     }}
     .nav-logo-img {{
-      height: 32px; width: 32px; border-radius: 8px;
+      height: 40px; width: 40px; border-radius: 10px;
       object-fit: cover;
     }}
     .nav-logo-text {{
@@ -425,6 +425,22 @@ def generate_html(clients):
       50% {{ transform: translateY(-18px); }}
     }}
     .hero-content {{ position: relative; z-index: 1; }}
+    .hero-logo-wrap {{
+      margin-bottom: 28px;
+    }}
+    .hero-logo {{
+      width: 130px; height: 130px;
+      border-radius: 32px;
+      object-fit: cover;
+      box-shadow: 0 0 0 1px rgba(91,191,196,0.3),
+                  0 8px 40px rgba(0,0,0,0.5),
+                  0 0 80px rgba(91,191,196,0.15);
+      animation: fadeIn 0.8s ease both;
+    }}
+    @keyframes fadeIn {{
+      from {{ opacity:0; transform:scale(0.92); }}
+      to   {{ opacity:1; transform:scale(1); }}
+    }}
     .hero-eyebrow {{
       display: inline-block;
       font-size: 11px; font-weight: 600; letter-spacing: 0.14em;
@@ -694,6 +710,9 @@ def generate_html(clients):
   <div class="hero-orb orb-2"></div>
   <div class="hero-orb orb-3"></div>
   <div class="hero-content">
+    <div class="hero-logo-wrap">
+      <img src="assets/logo-ikigai.jpeg" alt="IKIGAI" class="hero-logo">
+    </div>
     <div class="hero-eyebrow">Plataforma IKIGAI · v1.0</div>
     <h1 class="hero-title">
       Clientes <span class="hero-gradient-word">IKIGAI</span><br>en un solo lugar
