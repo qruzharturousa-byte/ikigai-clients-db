@@ -1,0 +1,54 @@
+id: arturo_monroy
+name: "Ing. Arturo A. Monroy Blanco"
+type: particular
+tagline: "Organización y automatización de vida personal"
+status: activo
+created: "2026-05-14"
+
+# Dominio personal (en construcción)
+domains:
+  personal: "arturo.familiamonroy.com.mx"
+
+# Servicios IKIGAI configurados
+sops_activos:
+  - SOP_gastos_personales_v1.1
+  - SOP_gastos_personales_v3
+  - SOP_central_contactos_alta_por_gasto_v1
+  - SOP_central_contactos_columnas_mapeo_v1
+  - SOP_precios_productos_pp_v1
+  - SOP_interacciones_familiares_v1
+  - SOP_busqueda_rapida_memoria_v1
+  - SOP_documentos_personales_v1
+  - SOP_viajes_registro_consulta_v1
+  - SOP_recordatorios_finanzas_obligaciones_v1
+
+skills_activos:
+  - gastos-personales
+  - precios-productos-pp
+  - interacciones-familiares
+  - recordatorios-finanzas
+  - viajes-registro
+  - reporte-cierre-mensual
+  - busqueda-rapida-memoria
+
+# Cerebro universal
+cerebro_repo: "https://github.com/qruzharturousa-byte/ikigai-cerebro"
+cerebro_local: "/Users/arturo/ikigai-cerebro"
+
+# Núcleo familiar (futuro)
+nucleo_familiar:
+  - nombre: "Axel Arturo Monroy Pacheco"
+    alias: "Ax"
+    rol: hijo
+  - nombre: "Anette Michelle Monroy Pacheco"
+    alias: "Mich"
+    rol: hija
+
+# Métricas actuales
+metrics:
+  sops: 10
+  skills: 7
+  sistemas: 3
+  paginas_pendientes: 1
+
+notes: "Cliente particular IKIGAI. Organización vida personal: finanzas (gastos, CC, PP), familia, documentos. Página personal en construcción: arturo.familiamonroy.com.mx"

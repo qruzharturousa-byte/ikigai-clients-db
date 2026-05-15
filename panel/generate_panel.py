@@ -222,6 +222,7 @@ def generate_html(clients):
         'linear-gradient(135deg, #5BBFC4, #3D9EA3)',   # QRUZH — teal
         'linear-gradient(135deg, #C47890, #9B5F73)',   # Torreland — rose
         'linear-gradient(135deg, #C4A882, #A08060)',   # Gardenia — gold
+        'linear-gradient(135deg, #8B7EC8, #6B5EA8)',   # Arturo Monroy — violet
     ]
     for i, c in enumerate(clients):
         cid      = c.get('id', '')
@@ -229,29 +230,56 @@ def generate_html(clients):
         status   = c.get('status', 'en_desarrollo')
         priority = c.get('priority', 'media')
         tipo     = c.get('type', '')
+        is_particular = tipo == 'particular'
         initials = ''.join(w[0].upper() for w in name.split()[:2])
         grad     = client_colors[i % len(client_colors)]
         active_bots = [b for b in c.get('bots_list', []) if b.get('status') == 'activo']
         bot_live = bool(active_bots)
 
-        cards += f'''
-        <div class="card" style="--card-delay:{i * 0.08}s">
-          <div class="card-top">
-            <div class="avatar" style="background:{grad}">{initials}</div>
-            <div class="card-identity">
-              <div class="card-name-row">
-                <h2 class="card-name">{name}</h2>
-                {priority_dot(priority)}
-              </div>
-              <div class="card-sub">{tipo}</div>
-              {status_pill(status)}
+        # Métricas adaptadas por tipo de cliente
+        if is_particular:
+            sops_activos = c.get('sops_activos', '')
+            sops_count = len(sops_activos.split()) if isinstance(sops_activos, str) and sops_activos else 10
+            skills_activos = c.get('skills_activos', '')
+            skills_count = len(skills_activos.split()) if isinstance(skills_activos, str) and skills_activos else 7
+            cerebro = c.get('cerebro_repo', '')
+            metrics_html = f'''<div class="metrics-row">
+            <div class="metric">
+              <span class="metric-val">{sops_count}</span>
+              <span class="metric-lbl">SOPs</span>
             </div>
-            {'<div class="bot-live-badge">🤖 Bot LIVE</div>' if bot_live else ''}
+            <div class="metric">
+              <span class="metric-val">{skills_count}</span>
+              <span class="metric-lbl">Skills</span>
+            </div>
+            <div class="metric">
+              <span class="metric-val">3</span>
+              <span class="metric-lbl">Sistemas</span>
+            </div>
+          </div>'''
+            particular_sections = f'''
+          <div class="section-block">
+            <div class="section-label">Sistemas activos</div>
+            <div class="tags-row">
+              <span class="tag" style="color:var(--green);background:var(--green-bg)">Gastos</span>
+              <span class="tag" style="color:var(--green);background:var(--green-bg)">CC Contactos</span>
+              <span class="tag" style="color:var(--green);background:var(--green-bg)">PP Precios</span>
+            </div>
           </div>
-
-          <div class="domains-row">{domain_links(c)}</div>
-
-          <div class="metrics-row">
+          <div class="section-block">
+            <div class="section-label">Bot asistente</div>
+            <div class="tags-row">
+              <span class="tag tag-bot">QruzhBot · IA Personal</span>
+            </div>
+          </div>
+          <div class="section-block">
+            <div class="section-label">Cerebro</div>
+            <div class="tags-row">
+              <a href="{cerebro}" target="_blank" class="domain-pill">ikigai-cerebro ↗</a>
+            </div>
+          </div>'''
+        else:
+            metrics_html = f'''<div class="metrics-row">
             <div class="metric">
               <span class="metric-val">{c.get("pages_count", 0)}</span>
               <span class="metric-lbl">Páginas</span>
@@ -264,22 +292,46 @@ def generate_html(clients):
               <span class="metric-val">{len(c.get("bots_list", []))}</span>
               <span class="metric-lbl">Bots</span>
             </div>
-          </div>
-
+          </div>'''
+            empresa_sections = f'''
           <div class="section-block">
             <div class="section-label">Sistemas</div>
             <div class="tags-row">{systems_row(c.get("systems_list", []))}</div>
           </div>
-
           <div class="section-block">
             <div class="section-label">Bots IA</div>
             <div class="tags-row">{bots_row(c.get("bots_list", []))}</div>
           </div>
-
           <div class="section-block">
             <div class="section-label">Páginas</div>
             {pages_grid(c.get("pages_list", []))}
+          </div>'''
+            middle_sections = empresa_sections
+            particular_sections = ''
+
+        tipo_display = 'Particular' if is_particular else tipo
+        middle_sections = particular_sections if is_particular else empresa_sections if not is_particular else ''
+
+        cards += f'''
+        <div class="card{' card-particular' if is_particular else ''}" style="--card-delay:{i * 0.08}s">
+          <div class="card-top">
+            <div class="avatar" style="background:{grad}">{initials}</div>
+            <div class="card-identity">
+              <div class="card-name-row">
+                <h2 class="card-name">{name}</h2>
+                {priority_dot(priority)}
+              </div>
+              <div class="card-sub">{tipo_display}</div>
+              {status_pill(status)}
+            </div>
+            {'<div class="bot-live-badge">🤖 Bot LIVE</div>' if bot_live else ''}
           </div>
+
+          <div class="domains-row">{domain_links(c)}</div>
+
+          {metrics_html}
+
+          {middle_sections}
         </div>'''
 
     # — Stats numbers

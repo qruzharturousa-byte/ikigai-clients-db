@@ -88,5 +88,34 @@
       "systems_count": 0,
       "bots_count": 0
     }
+    ,
+    {
+      "id": "arturo_monroy",
+      "name": "Ing. Arturo A. Monroy Blanco",
+      "type": "particular",
+      "status": "activo",
+      "priority": "alta",
+      "created_at": "2026-05-14",
+      "config_path": "02_CLIENTES/arturo_monroy/cliente.config.yaml",
+      "contact": {
+        "company": "Familia Monroy",
+        "location": "Cancún, Quintana Roo, México"
+      },
+      "domains": [
+        { "url": "arturo.familiamonroy.com.mx", "env": "staging", "status": "en_construccion" }
+      ],
+      "repos": ["ikigai-cerebro"],
+      "tech": {
+        "frontend": [],
+        "backend": ["Supabase", "Cloudflare D1"],
+        "infra": ["GitHub", "Cloudflare", "Supabase"],
+        "ai": ["Claude AI", "QruzhBot"],
+        "payments": []
+      },
+      "pages_count": 0,
+      "systems_count": 3,
+      "bots_count": 1,
+      "cerebro_repo": "https://github.com/qruzharturousa-byte/ikigai-cerebro"
+    }
   ]
 }
